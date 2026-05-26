@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy Policy — SongMessage</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.55; }
+    h1 { font-size: 1.8rem; margin-bottom: 0.2rem; }
+    h2 { font-size: 1.2rem; margin-top: 1.8rem; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 1.4rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 0.3rem 0; }
+    a { color: #2A1A6B; }
+    .callout { background: #FAFAF6; border-left: 4px solid #2A1A6B; padding: 12px 16px; border-radius: 6px; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy — SongMessage</h1>
+  <div class="meta">Effective date: 26 May 2026 · Developer: N5 Labs · Contact: <a href="mailto:support@n5labs.com">support@n5labs.com</a></div>
+
+  <div class="callout">
+    <strong>Short version:</strong> SongMessage (the "App") turns the messages you type into musical voice notes. To do that, your typed message is sent through our secure proxy to a text-to-speech service that returns audio back to your device. We do not store your message text on our servers, and we do not send it to analytics. Generated audio is saved locally on your device. We do not sell or share personal data.
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p>N5 Labs ("we", "us") is an independent iOS developer. SongMessage is an iPhone app that converts short typed messages into singing voice notes you can share.</p>
+
+  <h2>2. What happens to the message text you type</h2>
+  <ul>
+    <li>When you tap to generate a SongMessage, the text you typed is sent over HTTPS to our Cloudflare-hosted proxy, which forwards it to a third-party text-to-speech provider (ElevenLabs). The provider returns generated audio that is delivered back to your device.</li>
+    <li><strong>We do not store your message text on our servers.</strong> The proxy forwards the request and discards the message after the audio is returned.</li>
+    <li><strong>We do not send your message text to analytics</strong> (no PostHog, Mixpanel, Amplitude, or similar event includes the text).</li>
+    <li>The third-party TTS provider processes the text per their own privacy policy and may retain it transiently for service operation and abuse prevention. See "Third-party services" below.</li>
+    <li>If you use the local fallback (no internet connection or proxy unavailable), the audio is generated entirely on-device and the text never leaves your phone.</li>
+  </ul>
+
+  <h2>3. Information the App does <em>not</em> collect or transmit</h2>
+  <ul>
+    <li>No name, address, email, phone number, or government identifier.</li>
+    <li>No precise location data.</li>
+    <li>No contacts, calendar, microphone, photos, or health data. (SongMessage does not request access to any of these.)</li>
+    <li>No social-login or third-party account data.</li>
+    <li>No advertising identifiers (IDFA / IDFV). We do not request App Tracking Transparency permission because we do not track.</li>
+    <li>No third-party advertising or behavioral profiling SDKs.</li>
+  </ul>
+
+  <h2>4. The minimal data we do use</h2>
+  <ul>
+    <li><strong>Subscription status</strong> via RevenueCat and the Apple App Store. RevenueCat receives an anonymous user ID (a random UUID assigned by the App, not by you) and your purchase status. Apple handles all payment information; we never see card or payment details.</li>
+    <li><strong>On-device-only state</strong> (your history of generated SongMessages, your onboarding state, your free-generation count) stays on the device using Apple's local storage. It is never uploaded.</li>
+    <li><strong>Generated audio</strong> is saved to your device's app sandbox. It stays on your device unless you choose to share it via the native iOS share sheet.</li>
+  </ul>
+
+  <h2>5. Subscriptions</h2>
+  <p>SongMessage is free to download with one free generation. An optional "SongMessage Pro" subscription unlocks unlimited generations and longer songs. Pricing is shown in the App at checkout and may include an introductory free trial. Purchases are processed by Apple; renewals, refunds, and cancellations are managed via your Apple ID account settings. We do not have access to your payment details.</p>
+
+  <h2>6. Third-party services</h2>
+  <ul>
+    <li><strong>Apple App Store</strong> — purchase, refund, and renewal of subscriptions.</li>
+    <li><strong>RevenueCat</strong> — subscription validation and entitlement management. <a href="https://www.revenuecat.com/privacy">RevenueCat privacy policy</a>.</li>
+    <li><strong>ElevenLabs</strong> (via our Cloudflare-hosted proxy) — text-to-speech generation. Your typed message is transmitted to ElevenLabs to generate the audio that comes back. ElevenLabs processes it per their <a href="https://elevenlabs.io/privacy-policy">privacy policy</a>. We do not pass your name, account, or device identifier alongside the text.</li>
+    <li><strong>Cloudflare Workers</strong> — hosts our proxy that brokers the call to ElevenLabs. Cloudflare's standard request logs may include the IP address that initiated the request. <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare privacy policy</a>.</li>
+  </ul>
+
+  <h2>7. Data retention and your rights</h2>
+  <p>Because we do not store your message text or generated audio on our servers, there is nothing for us to delete server-side regarding your content. RevenueCat retains subscription records as long as your subscription is active and for a reasonable period afterward for tax / compliance purposes. To request review, correction, or deletion of any record associated with your subscription, email <a href="mailto:support@n5labs.com">support@n5labs.com</a> and we will respond within 30 days.</p>
+
+  <p>Depending on your jurisdiction (EU/EEA under GDPR, California under CCPA/CPRA, Israel, UK), you have the right to access, correct, delete, port, restrict, or object to processing of your data, and to lodge a complaint with your data protection authority. Use the email above to exercise these rights.</p>
+
+  <h2>8. Data security</h2>
+  <p>Data in transit (your typed message to our proxy, our proxy to ElevenLabs, audio back to your device, subscription receipts to Apple and RevenueCat) is protected by industry-standard TLS. The on-device portion of the App is protected by the iOS sandbox. No method of transmission or storage is 100% secure; we apply commercially reasonable safeguards.</p>
+
+  <h2>9. Children</h2>
+  <p>SongMessage is not directed at children under 13. We do not knowingly collect personal information from anyone under 13. If you believe a child under 13 has used the App, contact <a href="mailto:support@n5labs.com">support@n5labs.com</a>.</p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>We may update this Privacy Policy from time to time. We will revise the effective date at the top and, where required, notify you in the App. Continued use of the App after a change constitutes acceptance.</p>
+
+  <h2>11. Contact</h2>
+  <p>Developer: N5 Labs<br>Email: <a href="mailto:support@n5labs.com">support@n5labs.com</a></p>
+</body>
+</html>
