@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy Policy — Trendy</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.55; }
+    h1 { font-size: 1.8rem; margin-bottom: 0.2rem; }
+    h2 { font-size: 1.2rem; margin-top: 1.8rem; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 1.4rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 0.3rem 0; }
+    a { color: #8A6D00; }
+    code { background: #F4F4F2; padding: 1px 5px; border-radius: 4px; font-size: 0.92em; }
+    .callout { background: #FFFBEC; border-left: 4px solid #F5C518; padding: 12px 16px; border-radius: 6px; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy — Trendy</h1>
+  <div class="meta">Effective date: 3 June 2026 · Developer: N5 Labs · Contact: <a href="mailto:support@n5labs.com">support@n5labs.com</a></div>
+
+  <div class="callout">
+    <strong>Short version:</strong> Trendy (the "App") turns a photo you choose into a short AI-generated trend video. To do that, the photo you pick is sent through our secure proxy to a third-party AI video model, which returns the video to your device. We do not store your photo or the generated video on our servers, and we do not send your photo to analytics. We do not sell or share personal data. There is no account and no login.
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p>N5 Labs ("we", "us") is an independent iOS developer. Trendy is an iPhone app that inserts a photo you choose into a trending short-video format and returns a roughly 5-second AI-generated video you can save and share.</p>
+
+  <h2>2. What happens to the photo you choose</h2>
+  <ul>
+    <li>You pick a photo from your device's photo library using Apple's standard photo picker. The App accesses only the single image you select — it does not read your wider photo library.</li>
+    <li>When you generate a video, that image and a fixed text "motion prompt" for the chosen trend are sent over HTTPS to our Cloudflare-hosted proxy.</li>
+    <li>The proxy forwards the image and prompt to our third-party AI video provider, <strong>Fal.ai</strong>, which runs the image-to-video model (ByteDance "Seedance") and returns the generated video.</li>
+    <li><strong>We do not store your photo or the generated video on our servers.</strong> The proxy passes the request to Fal.ai and discards the request body once the job is submitted; it retains only the anonymous quota counters described in section 4.</li>
+    <li><strong>We do not send your photo to analytics</strong> — no analytics or tracking event includes your image.</li>
+    <li>Fal.ai processes the image to generate and deliver the video per its own privacy terms, and may retain it transiently for service operation, safety, and abuse prevention. See "Third-party services" below.</li>
+  </ul>
+
+  <h2>3. Information the App does <em>not</em> collect or transmit</h2>
+  <ul>
+    <li>No name, address, email, phone number, or government identifier.</li>
+    <li>No account or login — Trendy has no sign-up.</li>
+    <li>No precise location data.</li>
+    <li>No contacts, calendar, microphone, or health data. (Trendy does not request access to any of these.)</li>
+    <li>No advertising identifiers (IDFA / IDFV). We do not request App Tracking Transparency permission because we do not track you across apps or websites.</li>
+    <li>No third-party advertising or behavioral profiling SDKs.</li>
+  </ul>
+
+  <h2>4. The minimal data we do use</h2>
+  <ul>
+    <li><strong>Anonymous subscription identifier</strong> — RevenueCat assigns the App a random ID (the "app user ID") that is not derived from any personal information. It is sent to RevenueCat to validate your subscription status, and to our proxy each time you generate a video so we can enforce per-user usage and rate limits. We never see your name, Apple ID, or payment details.</li>
+    <li><strong>Aggregated usage counters</strong> — our proxy stores anonymous counters keyed by the app user ID and/or the requesting IP address (for example, how many videos have been generated in a window) solely to enforce limits and throttle abuse. These are short-lived and expire automatically.</li>
+    <li><strong>Subscription status</strong> via RevenueCat and the Apple App Store. Apple handles all payment information; we never see card or payment details.</li>
+    <li><strong>On-device-only state</strong> — your library of generated videos, onboarding state, and the video files themselves are stored on your device using Apple's local storage. This is never uploaded.</li>
+    <li><strong>Saving to Photos</strong> — if you choose to save a generated video, the App writes it to your device's photo library with your permission. The save happens entirely on-device.</li>
+  </ul>
+
+  <h2>5. Subscriptions</h2>
+  <p>Trendy Pro is an auto-renewing subscription sold through the Apple App Store and managed with RevenueCat. Purchases, renewals, and cancellations are handled by Apple; we receive only an anonymous, non-personal subscription status. You can manage or cancel your subscription at any time in the App Store account settings, or via the in-app Settings → Manage Subscription.</p>
+
+  <h2>6. Third-party services</h2>
+  <ul>
+    <li><strong>Fal.ai</strong> — runs the AI image-to-video model that generates your video. The selected image and the trend's motion prompt are processed by Fal.ai to produce and return the video. See Fal.ai's privacy policy at <a href="https://fal.ai/privacy">fal.ai/privacy</a>.</li>
+    <li><strong>RevenueCat</strong> — manages subscription state using the anonymous app user ID. See <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</li>
+    <li><strong>Cloudflare</strong> — hosts our proxy that brokers requests between the App and Fal.ai. See <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a>.</li>
+    <li><strong>Apple</strong> — processes all payments and provides the photo picker and local storage. See <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</li>
+  </ul>
+
+  <h2>7. Data retention</h2>
+  <p>Because we do not store your photos or generated videos on our servers, there is nothing for us to delete on the server side beyond the short-lived, anonymous usage counters described above, which expire automatically. Content you keep stays on your device and is removed when you delete it or uninstall the App.</p>
+
+  <h2>8. Children</h2>
+  <p>Trendy is not directed to children under 13, and we do not knowingly collect personal information from children. If you believe a child has provided us information, contact us and we will address it.</p>
+
+  <h2>9. Your rights</h2>
+  <p>Depending on where you live, you may have rights to access, correct, or delete personal data. Because Trendy holds no account and stores no personal content on our servers, most of your data lives only on your device and is under your direct control. For any request, email <a href="mailto:support@n5labs.com">support@n5labs.com</a>.</p>
+
+  <h2>10. Changes</h2>
+  <p>We may update this policy as the App evolves. Material changes will be reflected by the effective date above and, where appropriate, surfaced in the App.</p>
+
+  <h2>11. Contact</h2>
+  <p>Questions about this policy? Email <a href="mailto:support@n5labs.com">support@n5labs.com</a>.</p>
+</body>
+</html>
