@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy Policy — Outsy</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.55; }
+    h1 { font-size: 1.8rem; margin-bottom: 0.2rem; }
+    h2 { font-size: 1.2rem; margin-top: 1.8rem; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 1.4rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 0.3rem 0; }
+    a { color: #C9301F; }
+    code { background: #F4F4F2; padding: 1px 5px; border-radius: 4px; font-size: 0.92em; }
+    .callout { background: #FFF6F2; border-left: 4px solid #FF5A4E; padding: 12px 16px; border-radius: 6px; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy — Outsy</h1>
+  <div class="meta">Effective date: 6 June 2026 · Developer: N5 Labs · Contact: <a href="mailto:support@n5labs.com">support@n5labs.com</a></div>
+
+  <div class="callout">
+    <strong>Short version:</strong> Outsy turns places you save — from a TikTok/Instagram link, a pasted link, a screenshot, or a search — into a walkable night-out plan on a map. Your saved spots and plans live <strong>on your device</strong>. When you import a link, the link and your approximate location are sent through our secure proxy to an AI model that reads the place names back to your phone. We do not require an account, we do not show ads, and we do not sell or share your personal data. There is no tracking and no advertising identifier.
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p>N5 Labs ("we", "us") is an independent iOS developer. Outsy is an iPhone app that helps you save bars, restaurants and cafés and routes them into a walkable evening. There is no user account and no login.</p>
+
+  <h2>2. What stays on your device</h2>
+  <ul>
+    <li><strong>Saved spots, lists, and plans</strong> you create are stored locally on your iPhone (and in a shared app container so the Share Extension can save to it). They are not uploaded to our servers.</li>
+    <li><strong>Your preferences</strong> (vibes, occasion, age range you optionally pick, display name) are stored locally on your device only.</li>
+    <li><strong>Screenshots/photos you choose</strong> for "Upload screenshot" are read <strong>on your device</strong> using Apple's on-device text recognition (Vision). The image itself is never uploaded; only the place name it contains is then looked up.</li>
+  </ul>
+
+  <h2>3. What is sent off your device, and why</h2>
+  <ul>
+    <li><strong>The link you import.</strong> When you paste or share a TikTok / Instagram / web link, that URL is sent to our secure proxy (a Cloudflare Worker), which fetches the linked page/video and uses a third-party AI model to extract the venue names mentioned. Only the extracted place names are returned to your phone. We do not store the link or the extracted content on our servers.</li>
+    <li><strong>Your approximate location.</strong> If you grant location access, your coordinates may be sent with an import request so we can resolve venues near the right city, and are used on-device to draw the map, sort by distance, and route your plan. Location is used while you use the app ("When In Use") only.</li>
+    <li><strong>Place lookups.</strong> Venue names are resolved to real places and map coordinates using Apple Maps (MapKit / MKLocalSearch). These requests are handled by Apple under Apple's privacy terms.</li>
+  </ul>
+  <p>The proxy temporarily keeps anonymous, IP-based rate-limit counters to prevent abuse. These expire automatically and are not used to identify you or build a profile.</p>
+
+  <h2>4. Subscriptions</h2>
+  <p>Outsy offers an optional "Pro" subscription sold through Apple's App Store. Purchases are processed by Apple; we use <strong>RevenueCat</strong> to manage entitlements and validate receipts. We never see your card or Apple ID. RevenueCat receives a randomly generated, app-specific identifier and your subscription status. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a> and <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
+
+  <h2>5. Analytics &amp; tracking</h2>
+  <p>Outsy does <strong>not</strong> use third-party advertising or analytics SDKs, does <strong>not</strong> use the advertising identifier (IDFA), and does <strong>not</strong> track you across apps or websites. We show no ads.</p>
+
+  <h2>6. Permissions we may ask for</h2>
+  <ul>
+    <li><strong>Location (When In Use)</strong> — to show nearby spots, sort by distance, and route a walkable night. Optional; the app works with a default area if declined.</li>
+    <li><strong>Photo Library</strong> — only when you tap "Upload screenshot," to read a place name from an image you pick. Read on-device; the image is not uploaded.</li>
+    <li><strong>Calendar (write-only)</strong> — only if you choose to add a plan's stops to your calendar.</li>
+  </ul>
+  <p>You can change any of these any time in iOS Settings.</p>
+
+  <h2>7. Children</h2>
+  <p>Outsy is intended for adults planning nights out and is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+  <h2>8. Third parties we rely on</h2>
+  <ul>
+    <li><strong>Apple</strong> — Maps (MapKit), App Store purchases (StoreKit), on-device text recognition.</li>
+    <li><strong>Cloudflare</strong> — hosts our secure import proxy.</li>
+    <li><strong>A third-party AI model</strong> (accessed only through our proxy) — extracts venue names from a link you import.</li>
+    <li><strong>RevenueCat</strong> — subscription management.</li>
+  </ul>
+
+  <h2>9. Your rights</h2>
+  <p>Because Outsy has no account and stores your data on your device, you can remove everything by deleting your saved spots/plans in the app or deleting the app. For questions or requests, email <a href="mailto:support@n5labs.com">support@n5labs.com</a>.</p>
+
+  <h2>10. Changes</h2>
+  <p>We may update this policy as the app evolves. Material changes will be reflected here with a new effective date.</p>
+</body>
+</html>
