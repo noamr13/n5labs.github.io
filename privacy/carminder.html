@@ -20,47 +20,51 @@
   <div class="meta">Effective date: 26 June 2026 · Developer: N5 Labs · Contact: <a href="mailto:support@n5labs.com">support@n5labs.com</a></div>
 
   <div class="callout">
-    <strong>Short version:</strong> CarMinder is a local-first car dashboard and reminder app. It does not request location permission in V1 and does not track your parked-car location. Apple Maps handles parked-car location when you enable that Apple Maps feature.
+    <strong>Short version:</strong> CarMinder is a local-first car dashboard widget app. It stores your widget setup on your device, shares widget data with its WidgetKit extension, and uses Apple Shortcuts for optional ride sound automations.
   </div>
 
   <h2>1. Who we are</h2>
-  <p>N5 Labs ("we", "us") is an independent iOS developer. CarMinder is an iPhone app for car dashboard customization, Backseat Check reminders, and Apple Maps parked-car setup guidance.</p>
+  <p>N5 Labs ("we", "us") is an independent iOS developer. CarMinder is an iPhone app for car dashboard widgets, lyrics-style cards, motion-poster cards, and ride sound setup.</p>
 
   <h2>2. Data stored on your device</h2>
   <p>CarMinder may store these settings locally on your device:</p>
   <ul>
-    <li>Car nickname, model name, dashboard color, and dashboard style.</li>
-    <li>Selected reminder duration and reminder sound.</li>
-    <li>Active Backseat Check reminder state.</li>
-    <li>Whether you marked Apple Maps parked-car setup as complete.</li>
+    <li>Car nickname, model name, city, dashboard color, and selected widget style.</li>
+    <li>Selected car image and widget preview data used by the WidgetKit extension.</li>
+    <li>Lyrics-card text, song title, artist label, theme, and line progress.</li>
+    <li>Motion-poster title, subtitle, frame style, and selected frame.</li>
+    <li>Selected ride sounds for CarPlay connected, CarPlay disconnected, and home arrival cues.</li>
     <li>Pro entitlement state used to unlock paid features.</li>
     <li>An anonymous analytics install identifier when analytics is configured.</li>
   </ul>
 
-  <h2>3. Notifications</h2>
-  <p>CarMinder uses local notifications for Backseat Check reminders. Notification permission is requested only when you start a reminder. You can change notification permissions in iOS Settings.</p>
+  <h2>3. Widgets and photos</h2>
+  <p>When you choose a car image, CarMinder processes it on device into a bounded widget image and stores it in the app's shared container so the WidgetKit extension can display it. CarMinder does not request broad photo-library permission in V1.</p>
 
-  <h2>4. Location</h2>
-  <p>CarMinder does not request location permission in V1 and does not track your car location.</p>
-  <p>Parked-car location is handled by Apple Maps. CarMinder only provides setup guidance and a handoff back to Apple Maps.</p>
+  <h2>4. Notifications and Shortcuts</h2>
+  <p>CarMinder can provide local notification sounds for Apple Shortcuts automations. Notification permission may be requested when you enable or run sound cues. You can change notification permissions in iOS Settings.</p>
+  <p>Apple Shortcuts runs personal automations such as CarPlay connect, CarPlay disconnect, and Arrive. CarMinder provides App Shortcuts and bundled sound cues; it does not control the CarPlay interface.</p>
 
-  <h2>5. Purchases</h2>
+  <h2>5. Location</h2>
+  <p>CarMinder does not request location permission in V1 and does not track your location. Home arrival automations are configured and run by Apple's Shortcuts app.</p>
+
+  <h2>6. Purchases</h2>
   <p>CarMinder may offer optional Pro features through auto-renewable subscriptions sold by Apple through your App Store account. We use <strong>RevenueCat</strong> to manage subscription entitlements and validate purchase status. RevenueCat may process purchase identifiers and subscription history needed to unlock Pro features. We never see your payment card or Apple ID password.</p>
   <p>See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a> and <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
 
-  <h2>6. Analytics</h2>
+  <h2>7. Analytics</h2>
   <p>CarMinder can send product analytics events through PostHog when an analytics key is configured. Events are designed to avoid personal content, exact location, license plates, phone numbers, names, prompts, messages, and audio URLs. We do not use the advertising identifier (IDFA).</p>
 
-  <h2>7. Children</h2>
-  <p>CarMinder is a general utility and reminder app. It is not directed at children under 13 and does not knowingly collect personal information from children.</p>
+  <h2>8. Children</h2>
+  <p>CarMinder is a general lifestyle utility. It is not directed at children under 13 and does not knowingly collect personal information from children.</p>
 
-  <h2>8. No sale of personal information</h2>
+  <h2>9. No sale of personal information</h2>
   <p>N5 Labs does not sell personal information.</p>
 
-  <h2>9. Your choices</h2>
+  <h2>10. Your choices</h2>
   <p>You can remove locally stored CarMinder data by deleting the app from your device. For questions or requests, email <a href="mailto:support@n5labs.com">support@n5labs.com</a>.</p>
 
-  <h2>10. Changes</h2>
+  <h2>11. Changes</h2>
   <p>We may update this policy as the app evolves. Material changes will be reflected here with a new effective date.</p>
 </body>
 </html>
