@@ -33,7 +33,7 @@
     <li>Selected car image and widget preview data used by the WidgetKit extension.</li>
     <li>Lyrics-card text, song title, artist label, theme, and line progress.</li>
     <li>Motion-poster title, subtitle, frame style, and selected frame.</li>
-    <li>Selected ride sounds for CarPlay connected, CarPlay disconnected, and home arrival cues.</li>
+    <li>Selected ride sounds and imported custom sound files for CarPlay connected, CarPlay disconnected, and home arrival cues.</li>
     <li>Pro entitlement state used to unlock paid features.</li>
     <li>An anonymous analytics install identifier when analytics is configured.</li>
   </ul>
@@ -42,8 +42,8 @@
   <p>When you choose a car image, CarMinder processes it on device into a bounded widget image and stores it in the app's shared container so the WidgetKit extension can display it. CarMinder does not request broad photo-library permission in V1.</p>
 
   <h2>4. Notifications and Shortcuts</h2>
-  <p>CarMinder can provide local notification sounds for Apple Shortcuts automations. Notification permission may be requested when you enable or run sound cues. You can change notification permissions in iOS Settings.</p>
-  <p>Apple Shortcuts runs personal automations such as CarPlay connect, CarPlay disconnect, and Arrive. CarMinder provides App Shortcuts and bundled sound cues; it does not control the CarPlay interface.</p>
+  <p>CarMinder can provide local notification sounds for Apple Shortcuts automations. Notification permission may be requested when you enable or run sound cues. Imported custom sounds stay on your device and are used only for local sound cues. You can change notification permissions in iOS Settings.</p>
+  <p>Apple Shortcuts runs personal automations such as CarPlay connect, CarPlay disconnect, and Arrive. CarMinder provides App Shortcuts plus bundled or user-imported local sound cues; it does not control the CarPlay interface.</p>
 
   <h2>5. Location</h2>
   <p>CarMinder does not request location permission in V1 and does not track your location. Home arrival automations are configured and run by Apple's Shortcuts app.</p>
