@@ -18,10 +18,10 @@
 </head>
 <body>
   <h1>Privacy Policy — Trendy</h1>
-  <div class="meta">Effective date: 3 June 2026 · Developer: N5 Labs · Contact: <a href="mailto:support@n5labs.com">support@n5labs.com</a></div>
+  <div class="meta">Effective date: 30 June 2026 · Developer: N5 Labs · Contact: <a href="mailto:support@n5labs.com">support@n5labs.com</a></div>
 
   <div class="callout">
-    <strong>Short version:</strong> Trendy (the "App") turns a photo you choose into a short AI-generated trend video. To do that, the photo you pick is sent through our secure proxy to a third-party AI video model, which returns the video to your device. We do not store your photo or the generated video on our servers, and we do not send your photo to analytics. We do not sell or share personal data. There is no account and no login.
+    <strong>Short version:</strong> Trendy (the "App") turns a photo you choose into a short AI-generated trend video. To do that, the photo you pick — which may contain your face — is sent through our secure proxy to a third-party AI video model, which returns the video to your device. We do not store your photo, your face data, or the generated video on our servers, and we do not send them to analytics. We do not use face data for identification, advertising, profiling, or AI model training. We do not sell or share personal data. There is no account and no login.
   </div>
 
   <h2>1. Who we are</h2>
@@ -32,13 +32,22 @@
     <li>You pick a photo from your device's photo library using Apple's standard photo picker. The App accesses only the single image you select — it does not read your wider photo library.</li>
     <li>When you generate a video, that image and a fixed text "motion prompt" for the chosen trend are sent over HTTPS to our Cloudflare-hosted proxy.</li>
     <li>The proxy forwards the image and prompt to our third-party AI video provider, <strong>Fal.ai</strong>, which runs the image-to-video model (ByteDance "Seedance") and returns the generated video.</li>
-    <li><strong>We do not store your photo or the generated video on our servers.</strong> The proxy passes the request to Fal.ai and discards the request body once the job is submitted; it retains only the anonymous quota counters described in section 4.</li>
+    <li><strong>We do not store your photo or the generated video on our servers.</strong> The proxy passes the request to Fal.ai and discards the request body once the job is submitted; it retains only the anonymous quota counters described in section 5.</li>
     <li><strong>We do not send your photo to analytics</strong> — no analytics or tracking event includes your image.</li>
-    <li>The photo you choose may include your face. It is used <strong>only to generate the video you request</strong> — we do not use it to build advertising or tracking profiles, we do not sell it, and we do not use it to train AI models.</li>
     <li>Fal.ai processes the image to generate and deliver the video per its own privacy terms, and may retain it transiently for service operation, safety, and abuse prevention. See "Third-party services" below.</li>
   </ul>
 
-  <h2>3. Information the App does <em>not</em> collect or transmit</h2>
+  <h2>3. Face data</h2>
+  <p>Because the photo you choose may contain your face, this section explains specifically how the App handles face data. This is the controlling statement on the App's collection, use, disclosure, sharing, storage, and retention of face data.</p>
+  <ul>
+    <li><strong>What face data we collect:</strong> The only face data involved is the single still photo you choose to upload for a generation. That photo may contain your face or another person's face. The App does <strong>not</strong> create, derive, or store a faceprint, facial geometry, face template, face embedding, or any other biometric identifier from the image. The App does not perform facial recognition and does not attempt to identify, verify, or match any person.</li>
+    <li><strong>How the face data is used:</strong> The selected photo is used for one purpose only — to generate the short AI trend video you request, by sending it together with a fixed text motion prompt to our AI video provider. It is <strong>not</strong> used for identification, authentication, advertising, behavioral profiling, analytics, or to train or fine-tune any AI model.</li>
+    <li><strong>Sharing with third parties and where it is stored:</strong> To produce the video, the photo is transmitted over an encrypted (HTTPS) connection through our Cloudflare-hosted proxy to our AI video provider, <strong>Fal.ai</strong>, which runs the image-to-video model and returns the video. We do <strong>not</strong> sell, rent, or otherwise share the photo or any face data with advertisers, data brokers, or any other third party. Cloudflare acts only as the secure transport relay. Fal.ai processes the image to generate and return the video under its own privacy policy (<a href="https://fal.ai/privacy">fal.ai/privacy</a>).</li>
+    <li><strong>How long face data is retained:</strong> We do <strong>not</strong> retain your photo or any face data on our servers. Our proxy holds the image only in memory for the brief moment needed to submit the generation job, then discards the request body; it keeps no copy of the image. The generated video is delivered to your device and is stored only on your device under your control — we keep no server-side copy. Fal.ai may retain the image transiently for service operation, safety, and abuse prevention per its own policy, but not for advertising, profiling, or model training on our behalf.</li>
+    <li><strong>Your control:</strong> You choose which photo (if any) to upload, each time, using Apple's standard photo picker. Trendy has no account, so there is no stored library of your face data to manage — anything generated lives on your device and is removed when you delete it or uninstall the App. Questions or requests: <a href="mailto:support@n5labs.com">support@n5labs.com</a>.</li>
+  </ul>
+
+  <h2>4. Information the App does <em>not</em> collect or transmit</h2>
   <ul>
     <li>No name, address, email, phone number, or government identifier.</li>
     <li>No account or login — Trendy has no sign-up.</li>
@@ -46,9 +55,10 @@
     <li>No contacts, calendar, microphone, or health data. (Trendy does not request access to any of these.)</li>
     <li>No advertising identifiers (IDFA / IDFV). We do not request App Tracking Transparency permission because we do not track you across apps or websites.</li>
     <li>No third-party advertising or behavioral profiling SDKs.</li>
+    <li>No facial recognition, faceprints, or biometric templates (see section 3).</li>
   </ul>
 
-  <h2>4. The minimal data we do use</h2>
+  <h2>5. The minimal data we do use</h2>
   <ul>
     <li><strong>Anonymous subscription identifier</strong> — RevenueCat assigns the App a random ID (the "app user ID") that is not derived from any personal information. It is sent to RevenueCat to validate your subscription status, and to our proxy each time you generate a video so we can enforce per-user usage and rate limits. We never see your name, Apple ID, or payment details.</li>
     <li><strong>Aggregated usage counters</strong> — our proxy stores anonymous counters keyed by the app user ID and/or the requesting IP address (for example, how many videos have been generated in a window) solely to enforce limits and throttle abuse. These are short-lived and expire automatically.</li>
@@ -57,10 +67,10 @@
     <li><strong>Saving to Photos</strong> — if you choose to save a generated video, the App writes it to your device's photo library with your permission. The save happens entirely on-device.</li>
   </ul>
 
-  <h2>5. Subscriptions</h2>
+  <h2>6. Subscriptions</h2>
   <p>Trendy Pro is an auto-renewing subscription sold through the Apple App Store and managed with RevenueCat. Purchases, renewals, and cancellations are handled by Apple; we receive only an anonymous, non-personal subscription status. You can manage or cancel your subscription at any time in the App Store account settings, or via the in-app Settings → Manage Subscription.</p>
 
-  <h2>6. Third-party services</h2>
+  <h2>7. Third-party services</h2>
   <ul>
     <li><strong>Fal.ai</strong> — runs the AI image-to-video model that generates your video. The selected image and the trend's motion prompt are processed by Fal.ai to produce and return the video. See Fal.ai's privacy policy at <a href="https://fal.ai/privacy">fal.ai/privacy</a>.</li>
     <li><strong>RevenueCat</strong> — manages subscription state using the anonymous app user ID. See <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</li>
@@ -68,19 +78,19 @@
     <li><strong>Apple</strong> — processes all payments and provides the photo picker and local storage. See <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</li>
   </ul>
 
-  <h2>7. Data retention</h2>
-  <p>Because we do not store your photos or generated videos on our servers, there is nothing for us to delete on the server side beyond the short-lived, anonymous usage counters described above, which expire automatically. Content you keep stays on your device and is removed when you delete it or uninstall the App.</p>
+  <h2>8. Data retention</h2>
+  <p>Because we do not store your photos, face data, or generated videos on our servers, there is nothing for us to delete on the server side beyond the short-lived, anonymous usage counters described above, which expire automatically. Content you keep stays on your device and is removed when you delete it or uninstall the App.</p>
 
-  <h2>8. Children</h2>
+  <h2>9. Children</h2>
   <p>Trendy is not directed to children under 13, and we do not knowingly collect personal information from children. If you believe a child has provided us information, contact us and we will address it.</p>
 
-  <h2>9. Your rights</h2>
+  <h2>10. Your rights</h2>
   <p>Depending on where you live, you may have rights to access, correct, or delete personal data. Because Trendy holds no account and stores no personal content on our servers, most of your data lives only on your device and is under your direct control. For any request, email <a href="mailto:support@n5labs.com">support@n5labs.com</a>.</p>
 
-  <h2>10. Changes</h2>
+  <h2>11. Changes</h2>
   <p>We may update this policy as the App evolves. Material changes will be reflected by the effective date above and, where appropriate, surfaced in the App.</p>
 
-  <h2>11. Contact</h2>
+  <h2>12. Contact</h2>
   <p>Questions about this policy? Email <a href="mailto:support@n5labs.com">support@n5labs.com</a>.</p>
 </body>
 </html>
