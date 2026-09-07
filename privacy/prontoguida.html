@@ -9,13 +9,6 @@
   body { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem;
          font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
          color: #1c1c1e; background: #fff; -webkit-text-size-adjust: 100%; }
-  @media (prefers-color-scheme: dark) {
-    body { color: #f2f2f7; background: #000; }
-    a { color: #64b5ff; }
-    th, td { border-color: #38383a; }
-    thead th { background: #1c1c1e; }
-    footer { border-color: #38383a; }
-  }
   h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 .5rem; }
   h2 { font-size: 1.15rem; margin: 2.2rem 0 .5rem; }
   ul { padding-left: 1.2rem; }
@@ -24,9 +17,19 @@
   .tablewrap { overflow-x: auto; margin: 1rem 0; }
   table { border-collapse: collapse; width: 100%; font-size: .95rem; }
   th, td { border: 1px solid #d1d1d6; padding: .55rem .7rem; text-align: left; vertical-align: top; }
-  thead th { background: #f2f2f7; font-weight: 600; }
+  thead th { background: #f2f2f7; color: #1c1c1e; font-weight: 600; }
   footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #d1d1d6;
            font-size: .85rem; opacity: .7; }
+  /* LAST on purpose. These rules have the same specificity as the base ones above, so
+     they only win by source order — with the block placed first, `thead th` reverted to
+     the light background and the header text rendered light-on-light. */
+  @media (prefers-color-scheme: dark) {
+    body { color: #f2f2f7; background: #000; }
+    a { color: #64b5ff; }
+    th, td { border-color: #38383a; }
+    thead th { background: #1c1c1e; color: #f2f2f7; }
+    footer { border-color: #38383a; }
+  }
 </style>
 </head>
 <body>
