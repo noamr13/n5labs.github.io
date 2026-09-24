@@ -25,7 +25,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Moto Theory · Last updated 15 September 2026</p>
+<p class="updated">Moto Theory · Last updated 24 September 2026</p>
 
 <p class="lede">Moto Theory never asks for your name, email or anything else that identifies you.
 There is no account, no sign-up and no login. This policy explains the little data that does
@@ -56,7 +56,8 @@ deletes your progress from the phone.</p>
       all, and it does not send you notifications.</li>
   <li>No advertising identifier. The app shows no ads and does not track you across other apps or
       websites.</li>
-  <li>No analytics and no crash reporting on how you use the app.</li>
+  <li>No analytics tools and no crash reporting. The only detail about how you use the app that
+      leaves the phone is which part of the app opened the Pro screen, described under Purchases.</li>
 </ul>
 <p>Sound effects are generated on the device. The app does not record audio.</p>
 
@@ -74,13 +75,26 @@ not you have subscribed, and it handles purchases and restores.</p>
   <li>your purchase and subscription status, including the purchase transactions and receipts Apple
       issues;</li>
   <li>Apple's identifier for vendor, a device identifier that is not the advertising identifier;</li>
-  <li>basic technical details such as the app and build version, iOS version, device model,
-      preferred languages, App Store country, and whether a purchase is a test purchase;</li>
+  <li>basic technical details such as the app name, app and build version, the language the app
+      runs in, iOS version, device model, preferred languages, App Store country, and whether a
+      purchase is a test purchase;</li>
+  <li>which part of the app opened the Pro screen, such as a locked leg of the route or the mock
+      test limit;</li>
+  <li>the Apple Ads attribution token described below;</li>
   <li>the IP address your connection comes from, as with any request over the internet.</li>
 </ul>
+<p>RevenueCat uses this to check your subscription and to handle purchases and restores. We also
+use it to see which parts of the app lead riders to subscribe.</p>
 <p>RevenueCat keeps the anonymous ID and a cached copy of your subscription status on your device.
 See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a> for how it handles
 this data.</p>
+
+<h2>Apple Ads</h2>
+<p>Once per installation, the app asks Apple's AdServices framework for an attribution token and
+sends it to RevenueCat. RevenueCat uses the token to check with Apple whether the install came from
+one of our Apple Ads campaigns, so we can measure how those campaigns perform. The attribution data
+is what Apple provides. The token is not the advertising identifier, the app does not ask to track
+you, and none of this is used to follow you across other companies' apps or websites.</p>
 
 <h2>Links</h2>
 <p>Links in the app to this policy and to Apple's standard licence agreement open in your web
@@ -88,12 +102,13 @@ browser. The app does not load them itself.</p>
 
 <h2>Children</h2>
 <p>Moto Theory is aimed at people preparing for the UK motorcycle theory test. The app asks no one, children included, for their name, contact details
-or age, and the only data that leaves the phone is the subscription check described above.</p>
+or age, and the only data that leaves the phone is what goes to RevenueCat, described above.</p>
 
 <h2>Your rights</h2>
 <p>Under UK GDPR you have rights over personal data about you. We keep none on our own systems.
-The only record outside your phone is the subscription record RevenueCat holds for us, described
-above. It is not linked to your name or email. To have it removed, email us and we will ask
+The only record outside your phone is the one RevenueCat holds for us: your subscription status and
+the other details described above, including any Apple Ads attribution. It is not linked to your
+name or email. To have it removed, email us and we will ask
 RevenueCat to delete it. Include the order ID from your Apple receipt so we can find the right
 record; without a purchase, we have no way to tell which record is yours.</p>
 
@@ -106,9 +121,7 @@ record; without a purchase, we have no way to tell which record is yours.</p>
 <hr>
 <footer>
 Moto Theory is independent practice for the UK motorcycle theory test. It is not made, approved or
-endorsed by the Driver and Vehicle Standards Agency (DVSA). The Driver and Vehicle Standards Agency
-(DVSA) has given permission for the reproduction of Crown copyright material. DVSA is not
-responsible for the accuracy of the reproduction.
+endorsed by the Driver and Vehicle Standards Agency (DVSA).
 </footer>
 
 </body>

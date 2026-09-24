@@ -17,10 +17,10 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <div class="meta">ARDMS &amp; CCI sonography exam-prep app · Effective date: 11 September 2026 · Developer: N5 Labs · Contact: <a href="mailto:support@n5labs.online">support@n5labs.online</a></div>
+  <div class="meta">ARDMS &amp; CCI sonography exam-prep app · Effective date: 24 September 2026 · Developer: N5 Labs · Contact: <a href="mailto:support@n5labs.online">support@n5labs.online</a></div>
 
   <div class="callout">
-    <strong>Short version:</strong> This is a study app for sonography registry exams. There is no account and no login. Your study progress lives <strong>on your device</strong>. We use RevenueCat to manage the optional subscription and PostHog for anonymous product analytics so we can improve the app. We show no ads, we do not use the advertising identifier, and we do not sell or share your personal data or track you across other apps or websites.
+    <strong>Short version:</strong> This is a study app for sonography registry exams. There is no account and no login. Your study progress lives <strong>on your device</strong>. We use RevenueCat to manage the optional subscription and to measure our Apple Ads campaigns, and PostHog for anonymous usage analytics, which you can turn off in Settings. We show no ads, we do not use the advertising identifier, and we do not sell or share your personal data or track you across other apps or websites. Email <a href="mailto:support@n5labs.online">support@n5labs.online</a> to have your data deleted.
   </div>
 
   <h2>1. Who we are</h2>
@@ -33,32 +33,56 @@
   </ul>
 
   <h2>3. Subscriptions</h2>
-  <p>The app offers an optional subscription sold through Apple's App Store. Purchases are processed by Apple; we use <strong>RevenueCat</strong> to manage entitlements and validate receipts. We never see your card or Apple ID. RevenueCat receives a randomly generated, app-specific identifier and your subscription status. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a> and <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
-
-  <h2>4. Analytics</h2>
-  <p>We use <strong>PostHog</strong> to understand how the app is used — for example which screens are opened and which study modes are used — so we can improve it. These events are tied to a random, app-generated identifier, not to your name or Apple ID. This data is product analytics only. We do <strong>not</strong> use third-party advertising SDKs, we do <strong>not</strong> use the advertising identifier (IDFA), and we do <strong>not</strong> track you across other apps or websites. See <a href="https://posthog.com/privacy">PostHog's privacy policy</a>.</p>
-
-  <h2>5. What we collect, in App Store terms</h2>
+  <p>The app offers an optional subscription sold through Apple's App Store. Purchases are processed by Apple; we use <strong>RevenueCat</strong> to manage entitlements and validate receipts. We never see your card or Apple ID. RevenueCat receives:</p>
   <ul>
-    <li><strong>Purchases</strong> — your subscription status (via RevenueCat), not linked to your identity.</li>
-    <li><strong>Product interaction &amp; app performance</strong> — anonymous usage and diagnostic events (via PostHog), not linked to your identity.</li>
+    <li>a randomly generated, app-specific identifier;</li>
+    <li>your purchases and subscription status;</li>
+    <li>Apple's identifier for vendor (IDFV), a device identifier that is not the advertising identifier;</li>
+    <li>basic technical details such as the app name, app and build version, the language the app runs in, iOS version, device model, preferred languages and App Store country;</li>
+    <li>why the upgrade screen opened, such as the credential you were trying to open;</li>
+    <li>while usage analytics is on, the random PostHog ID described in section 5, so purchases and usage can be read together;</li>
+    <li>the Apple Ads attribution token described in section 4;</li>
+    <li>the IP address your connection comes from, as with any request over the internet.</li>
+  </ul>
+  <p>RevenueCat uses this to manage your subscription and to handle purchases and restores. We also use it to see which parts of the app lead people to subscribe. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a> and <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
+
+  <h2>4. Apple Ads attribution</h2>
+  <p>Once per installation, the app asks Apple's AdServices framework for an attribution token and sends it to RevenueCat. RevenueCat uses the token to check with Apple whether the install came from one of our Apple Ads campaigns, so we can measure how those campaigns perform. The attribution data is what Apple provides. The token is not the advertising identifier, the app does not ask to track you, and none of this is used to follow you across other companies' apps or websites.</p>
+
+  <h2>5. Analytics</h2>
+  <p>We use <strong>PostHog</strong> for anonymous usage analytics so we can improve the app. It records app-usage events: when the app is installed, updated, opened and moved to the background, with the app version and basic device details (device model, iOS version, language, time zone, screen size, and whether you are on Wi-Fi or mobile data). These events are tied to a random ID that PostHog creates on your device, not to your name or Apple ID. PostHog does not receive your answers, your progress or anything you type, and the app sends it no crash reports or screen recordings. Like any web service, PostHog receives the IP address of your connection. The events are sent to PostHog's servers in the United States. See <a href="https://posthog.com/privacy">PostHog's privacy policy</a>.</p>
+  <p><strong>Turning analytics off.</strong> Usage analytics is on by default. You can turn it off at any time in Settings with the <strong>Share anonymous usage analytics</strong> switch. While it is off, the app sends nothing to PostHog, and the PostHog ID is removed from your RevenueCat record. Events sent before you turned it off are kept as described in section 9.</p>
+  <p>We do <strong>not</strong> use third-party advertising SDKs, we do <strong>not</strong> use the advertising identifier (IDFA), and we do <strong>not</strong> track you across other apps or websites.</p>
+
+  <h2>6. What we collect, in App Store terms</h2>
+  <ul>
+    <li><strong>Identifiers</strong> — the random app user ID used by RevenueCat and the random PostHog ID (user ID), and Apple's identifier for vendor (device ID).</li>
+    <li><strong>Purchases</strong> — your purchase history and subscription status (via RevenueCat).</li>
+    <li><strong>Product interaction</strong> — app-usage events (via PostHog) and why the upgrade screen opened (via RevenueCat).</li>
+    <li>None of this is linked to your identity or used to track you. We use it to run the app and its subscription (app functionality) and to understand how the app is used (analytics).</li>
     <li>We do not collect your name, email, contacts, precise location, health records, or browsing history.</li>
   </ul>
 
-  <h2>6. Children</h2>
+  <h2>7. Children</h2>
   <p>This app is intended for adult students and healthcare professionals preparing for professional credentialing exams. It is not directed at children. We do not knowingly collect data from children.</p>
 
-  <h2>7. Third parties we rely on</h2>
+  <h2>8. Third parties we rely on</h2>
   <ul>
-    <li><strong>Apple</strong> — App Store purchases (StoreKit).</li>
-    <li><strong>RevenueCat</strong> — subscription management.</li>
-    <li><strong>PostHog</strong> — anonymous product analytics.</li>
+    <li><strong>Apple</strong> — App Store purchases (StoreKit) and Apple Ads attribution.</li>
+    <li><strong>RevenueCat</strong> — subscription management and Apple Ads attribution.</li>
+    <li><strong>PostHog</strong> — anonymous usage analytics, which you can turn off in Settings.</li>
   </ul>
 
-  <h2>8. Your rights</h2>
-  <p>Because the app has no account and stores your study data on your device, you can remove everything by resetting progress in Settings or deleting the app. For questions or requests, email <a href="mailto:support@n5labs.online">support@n5labs.online</a>.</p>
+  <h2>9. Keeping and deleting your data</h2>
+  <ul>
+    <li><strong>On your device</strong> — your study data stays until you reset progress in Settings (saved flashcards are kept) or delete the app, which removes everything the app stored, including its random IDs.</li>
+    <li><strong>RevenueCat</strong> — keeps your record for as long as it is needed to provide and restore your purchases and to meet applicable legal obligations.</li>
+    <li><strong>PostHog</strong> — keeps usage events for as long as they help us improve the app. We do not use them for anything else.</li>
+    <li><strong>Deletion on request</strong> — email <a href="mailto:support@n5labs.online">support@n5labs.online</a> and we will delete your RevenueCat record and the PostHog events linked to it. Because none of it is tied to your name, include the order ID from your Apple receipt so we can find your records. Without a purchase, we have no way to tell which anonymous records are yours, but you can stop analytics at any time in Settings.</li>
+  </ul>
+  <p>For questions or other requests, email <a href="mailto:support@n5labs.online">support@n5labs.online</a>.</p>
 
-  <h2>9. Changes</h2>
+  <h2>10. Changes</h2>
   <p>We may update this policy as the app evolves. Material changes will be reflected here with a new effective date.</p>
 </body>
 </html>
