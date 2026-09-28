@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Privacy Policy — CarMinder</title>
+  <title>Privacy Policy — Car Play Widgets</title>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.55; }
     h1 { font-size: 1.8rem; margin-bottom: 0.2rem; }
@@ -16,22 +16,22 @@
   </style>
 </head>
 <body>
-  <h1>Privacy Policy — CarMinder</h1>
-  <div class="meta">Effective date: 16 September 2026 · Developer: N5 Labs · Contact: <a href="mailto:support@n5labs.online">support@n5labs.online</a></div>
+  <h1>Privacy Policy — Car Play Widgets</h1>
+  <div class="meta">Effective date: 29 September 2026 (version 1.6) · Developer: N5 Labs · Contact: <a href="mailto:support@n5labs.online">support@n5labs.online</a></div>
 
   <div class="callout">
-    <strong>Short version:</strong> CarMinder is a local-first car dashboard widget app. It stores your widget setup on your device, shares widget data with its WidgetKit extension, and uses Apple Shortcuts for optional ride sound automations.
+    <strong>Short version:</strong> Car Play Widgets stores widget setup on your device, uses Apple Shortcuts for optional ride sounds, and can look up timed lyrics for songs playing in Apple Music. It uses analytics and subscription services. If you allow tracking, Airbridge also measures how our ads perform.
   </div>
 
   <h2>1. Who we are</h2>
-  <p>N5 Labs ("we", "us") is an independent iOS developer. CarMinder is an iPhone app for car dashboard widgets, lyrics-style cards, motion-poster cards, and ride sound setup.</p>
+  <p>N5 Labs ("we", "us") is an independent iOS developer. Car Play Widgets (formerly CarMinder) is an iPhone app for car dashboard widgets, lyrics, motion-poster cards, and ride sound setup.</p>
 
   <h2>2. Data stored on your device</h2>
-  <p>CarMinder may store these settings locally on your device:</p>
+  <p>Car Play Widgets may store these settings locally on your device:</p>
   <ul>
     <li>Car nickname, model name, city, dashboard color, and selected widget style.</li>
     <li>Selected car image and widget preview data used by the WidgetKit extension.</li>
-    <li>Lyrics-card text, song title, artist label, theme, and line progress.</li>
+    <li>Lyrics-card text, the selected song's title and artist, timed lyric state, theme, and line progress. The latest lyric may be stored in the shared container for the Lyrics widget.</li>
     <li>Motion-poster title, subtitle, frame style, and selected frame.</li>
     <li>Selected ride sounds and imported custom sound files for CarPlay connected, CarPlay disconnected, and home arrival cues.</li>
     <li>Pro entitlement state used to unlock paid features.</li>
@@ -39,36 +39,40 @@
   </ul>
 
   <h2>3. Widgets and photos</h2>
-  <p>When you choose a car image, CarMinder processes it on device into a bounded widget image and stores it in the app's shared container so the WidgetKit extension can display it. CarMinder does not request broad photo-library permission in V1.</p>
+  <p>When you choose a car image, Car Play Widgets processes it on device into a bounded widget image and stores it in the app's shared container so the WidgetKit extension can display it. The app does not request broad photo-library permission for this feature.</p>
 
   <h2>3.1 AI Widgets (optional feature)</h2>
   <p>If you use the optional AI Widgets feature, the car photo and the person photo you explicitly select are sent over an encrypted connection to our secure relay (hosted on Cloudflare) and passed to our image-generation provider, fal.ai, solely to create your personalized widget image. The photos are used only for that single generation: they are not used to train AI models, are not used for advertising or marketing, and are not shared with anyone else. The generated widget image is returned to your device and stored locally. AI generations use credits, which can be included with a Pro subscription or purchased through Apple's in-app purchase system; we never see your payment details. If you never use AI Widgets, no photos leave your device.</p>
 
+  <h2>3.2 Apple Music and timed lyrics</h2>
+  <p>If you connect Apple Music and separately allow lyric lookups, the app reads the current song and playback position. It sends the song title, artist, album when available, and duration to <strong>LRCLIB</strong> over HTTPS to find timed lyrics. LRCLIB also receives your network IP address as part of the request. The app does not send your Apple account credentials or song audio to LRCLIB. You can turn off lyric lookups in the app; this stops new requests. Lyric and widget state may be stored locally to display the current line. See <a href="https://lrclib.net/">LRCLIB</a> for its service information.</p>
+
   <h2>4. Notifications and Shortcuts</h2>
-  <p>CarMinder can provide local notification sounds for Apple Shortcuts automations. Notification permission may be requested when you enable or run sound cues. Imported custom sounds stay on your device and are used only for local sound cues. You can change notification permissions in iOS Settings.</p>
-  <p>Apple Shortcuts runs personal automations such as CarPlay connect, CarPlay disconnect, and Arrive. CarMinder provides App Shortcuts plus bundled or user-imported local sound cues; it does not control the CarPlay interface.</p>
+  <p>Car Play Widgets can provide local notification sounds for Apple Shortcuts automations. Notification permission may be requested when you enable or run sound cues. Imported custom sounds stay on your device and are used only for local sound cues. You can change notification permissions in iOS Settings.</p>
+  <p>Apple Shortcuts runs personal automations such as CarPlay connect, CarPlay disconnect, and Arrive. Car Play Widgets provides App Shortcuts plus bundled or user-imported local sound cues; it does not control the CarPlay interface.</p>
 
   <h2>5. Location</h2>
-  <p>CarMinder does not request location permission and does not track your location. Home arrival automations are configured and run by Apple's Shortcuts app. Our analytics provider may estimate an approximate region, such as your country or city, from your IP address; this is never your precise location.</p>
+  <p>Car Play Widgets does not request GPS location permission. Home arrival automations are configured and run by Apple's Shortcuts app. Our analytics or measurement providers may estimate an approximate region, such as your country or city, from your IP address; this is not precise GPS location.</p>
 
   <h2>6. Purchases</h2>
-  <p>CarMinder may offer optional Pro features through auto-renewable subscriptions sold by Apple through your App Store account. We use <strong>RevenueCat</strong> to manage subscription entitlements and validate purchase status. RevenueCat may process purchase identifiers and subscription history needed to unlock Pro features. We never see your payment card or Apple ID password.</p>
+  <p>Car Play Widgets may offer optional Pro features through auto-renewable subscriptions sold by Apple through your App Store account. We use <strong>RevenueCat</strong> to manage subscription entitlements and validate purchase status. RevenueCat processes purchase identifiers and subscription history needed to unlock Pro features. We never see your payment card or Apple ID password. RevenueCat also sends subscription lifecycle events and purchase values to Airbridge for ad measurement as described below.</p>
   <p>See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a> and <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
 
   <h2>7. Analytics and ad measurement</h2>
-  <p>CarMinder sends product analytics events through <strong>Google Firebase Analytics</strong>, and through <strong>PostHog</strong> when an analytics key is configured. Events are designed to avoid personal content, exact location, license plates, phone numbers, names, prompts, messages, and audio URLs.</p>
-  <p>We use Firebase Analytics, together with Apple Search Ads attribution and Apple's SKAdNetwork, to measure installs and purchases that come from our own ads on Apple Search Ads and Google Ads. Purchase events recorded by RevenueCat may be shared with Firebase for this purpose. CarMinder does not track you across other companies' apps or websites, does not show ads from other companies, does not ask for tracking permission, and does not use the advertising identifier (IDFA).</p>
-  <p>Versions 1.2 and 1.3 of CarMinder also included Meta's SDK to measure Meta ads and asked for tracking permission. Version 1.4 removed Meta's SDK and the tracking request.</p>
-  <p>See <a href="https://policies.google.com/privacy">Google's privacy policy</a> and <a href="https://posthog.com/privacy">PostHog's privacy policy</a>.</p>
+  <p>Car Play Widgets sends product analytics events through <strong>Google Firebase Analytics</strong>, and through <strong>PostHog</strong> when an analytics key is configured. Events are designed to avoid personal content, precise location, license plates, phone numbers, names, messages, and audio URLs.</p>
+  <p>We use Firebase Analytics, Apple Ads attribution, and Apple's SKAdNetwork to measure installs and purchases from our ads. RevenueCat may send purchase events to Firebase for this purpose. Native SKAdNetwork measurement is aggregated and continues when tracking permission is declined.</p>
+  <p>Version 1.6 asks for Apple's App Tracking Transparency permission. If you authorize tracking, the <strong>Airbridge</strong> SDK collects your device's advertising identifier (IDFA), an app/device identifier and app interaction events, and we link its user identifier to the RevenueCat customer ID. Airbridge uses these data, together with subscription events forwarded by RevenueCat, to measure our ads across other companies' apps and services, and shares them with the advertising platforms we use, such as Meta, Google and TikTok, so they can tell which ads led to installs and purchases. This is tracking for advertising measurement.</p>
+  <p>If you decline tracking, the app does not start Airbridge's SDK or pass a new Airbridge device identifier to RevenueCat. RevenueCat's server-side integration may still forward subscription lifecycle events to Airbridge. Those events carry no advertising identifier and no Airbridge identifier from your device; Airbridge may still report them to our advertising platforms as unattributed purchase events. You can change the system tracking permission in iOS Settings; when the app next becomes active, it checks the permission again and stops or starts Airbridge's SDK accordingly. Previously processed data is subject to the providers' retention and privacy controls.</p>
+  <p>See <a href="https://policies.google.com/privacy">Google's privacy policy</a>, <a href="https://posthog.com/privacy">PostHog's privacy policy</a>, and <a href="https://www.airbridge.io/en/privacy-policy">Airbridge's privacy policy</a>.</p>
 
   <h2>8. Children</h2>
-  <p>CarMinder is a general lifestyle utility. It is not directed at children under 13 and does not knowingly collect personal information from children.</p>
+  <p>Car Play Widgets is a general lifestyle utility. It is not directed at children under 13 and does not knowingly collect personal information from children.</p>
 
   <h2>9. No sale of personal information</h2>
   <p>N5 Labs does not sell personal information.</p>
 
   <h2>10. Your choices</h2>
-  <p>You can remove locally stored CarMinder data by deleting the app from your device. For questions or requests, email <a href="mailto:support@n5labs.online">support@n5labs.online</a>.</p>
+  <p>You can remove locally stored Car Play Widgets data by deleting the app from your device. You can change tracking permission in iOS Settings and turn off lyric lookups in the app. For questions or requests, email <a href="mailto:support@n5labs.online">support@n5labs.online</a>.</p>
 
   <h2>11. Changes</h2>
   <p>We may update this policy as the app evolves. Material changes will be reflected here with a new effective date.</p>
