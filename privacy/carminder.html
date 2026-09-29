@@ -35,7 +35,7 @@
     <li>Motion-poster title, subtitle, frame style, and selected frame.</li>
     <li>Selected ride sounds and imported custom sound files for CarPlay connected, CarPlay disconnected, and home arrival cues.</li>
     <li>Pro entitlement state used to unlock paid features.</li>
-    <li>An anonymous analytics install identifier when analytics is configured.</li>
+    <li>An anonymous analytics install identifier when analytics is configured, and the Airbridge device ID used for ad measurement (section 7).</li>
   </ul>
 
   <h2>3. Widgets and photos</h2>
@@ -61,7 +61,7 @@
   <h2>7. Analytics and ad measurement</h2>
   <p>Car Play Widgets sends product analytics events through <strong>Google Firebase Analytics</strong>, and through <strong>PostHog</strong> when an analytics key is configured. Events are designed to avoid personal content, precise location, license plates, phone numbers, names, messages, and audio URLs.</p>
   <p>We use Firebase Analytics, Apple Ads attribution, and Apple's SKAdNetwork to measure installs and purchases that come from our own ads. RevenueCat may send purchase events to Firebase for this purpose. SKAdNetwork measurement is aggregated by Apple.</p>
-  <p>RevenueCat also sends subscription events, such as a new subscription or a renewal with its price and currency, from its servers to <strong>Airbridge</strong>, our measurement partner, so we can see how our ads perform alongside SKAdNetwork results. These events carry no advertising identifier and no identifier from your device, and Airbridge may report them to our advertising platforms only as unattributed purchase events.</p>
+  <p>Car Play Widgets includes the restricted version of the SDK from <strong>Airbridge</strong>, our measurement partner, so we can see which of our own ads lead to installs and subscriptions. It collects Apple's app-specific identifier for vendors (IDFV) and an Airbridge device ID; basic device and app information, such as device model, OS and app version, language, and a country estimated from your IP address; app events such as installing, opening the app, and finishing onboarding; and, when an install came from an ad, Apple Ads attribution data and Google's on-device conversion measurement data. RevenueCat also sends subscription events, such as a new subscription or a renewal with its price and currency, from its servers to Airbridge together with the Airbridge device ID, so a subscription can be matched to the install it came from. Airbridge's restricted SDK does not collect the advertising identifier (IDFA), and we use this data only to measure our own ads.</p>
   <p>Car Play Widgets does not ask for tracking permission, does not use the advertising identifier (IDFA), and does not track you across other companies' apps or websites. Versions 1.2 and 1.3 included Meta's SDK and asked for tracking permission; version 1.4 removed both.</p>
   <p>See <a href="https://policies.google.com/privacy">Google's privacy policy</a>, <a href="https://posthog.com/privacy">PostHog's privacy policy</a>, and <a href="https://www.airbridge.io/en/privacy-policy">Airbridge's privacy policy</a>.</p>
 
