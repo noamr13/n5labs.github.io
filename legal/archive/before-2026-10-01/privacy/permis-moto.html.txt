@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Politique de confidentialité — Code Moto</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.55; }
+    h1 { font-size: 1.8rem; margin-bottom: 0.2rem; }
+    h2 { font-size: 1.2rem; margin-top: 1.8rem; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 1.4rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 0.3rem 0; }
+    a { color: #1C4AD9; }
+    code { background: #F4F4F2; padding: 1px 5px; border-radius: 4px; font-size: 0.92em; }
+    .callout { background: #F2F5FF; border-left: 4px solid #1C4AD9; padding: 12px 16px; border-radius: 6px; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+<h1>Politique de confidentialité — Code Moto</h1>
+<p>Mise à jour : 20 septembre 2026. Responsable : N5 Labs — <a href="mailto:support@n5labs.online">support@n5labs.online</a>.</p>
+<h2>Données sur votre appareil</h2>
+<p>Aucun compte n'est nécessaire. Votre prénom, les dates précises, les réponses, les erreurs et l'historique des exercices restent sur votre iPhone. Les rappels sont des notifications locales. Vous pouvez supprimer votre progression depuis le profil ou en désinstallant l'application.</p>
+<h2>RevenueCat et achats</h2>
+<p>Nous utilisons RevenueCat pour gérer les achats et les droits d'accès associés. Le service reçoit un identifiant aléatoire de l'installation, les transactions Apple et leur état, ainsi que la version, le numéro de build, la langue de l'application et le marché de l'examen. Nous transmettons également l'objectif de préparation sélectionné, la fin de l'introduction et l'existence d'une date d'examen, sans transmettre cette date précise, votre prénom, vos réponses ou l'historique des exercices. Ces données servent au fonctionnement et à l'analyse des achats.</p>
+<p>Apple traite les paiements. N5 Labs et RevenueCat ne reçoivent pas les coordonnées de votre carte bancaire. Voir la <a href="https://www.revenuecat.com/privacy">politique de RevenueCat</a>.</p>
+<h2>Attribution Apple Ads</h2>
+<p>L'application transmet à RevenueCat le jeton AdServices fourni par Apple pour vérifier si l'installation provient d'Apple Ads et mesurer les résultats des campagnes. Les informations attribuées sont celles renvoyées par Apple. Nous ne collectons pas l'IDFA et n'utilisons ni Firebase ni PostHog.</p>
+<h2>Conservation et droits</h2>
+<p>Les données locales restent sur l'appareil jusqu'à leur suppression. Apple et RevenueCat traitent les données d'achat et d'attribution pour fournir leurs services, maintenir les accès achetés et respecter les obligations applicables. Désinstaller l'application ne supprime pas nécessairement les transactions conservées par ces fournisseurs.</p>
+<p>Contactez-nous pour toute demande d'accès, de rectification ou d'effacement, dans les limites applicables. Vous pouvez déposer une réclamation auprès de l'autorité de protection des données compétente. L'utilisation de l'application ne nécessite pas de nous communiquer votre mot de passe.</p>
+<h2>Mineurs et modifications</h2>
+<p>L'application ne s'adresse pas aux enfants de moins de 13 ans. Les changements importants seront publiés sur cette page avec une nouvelle date.</p>
+<h2>Contenu pédagogique</h2>
+<p>Code Moto est un outil d'entraînement indépendant, sans affiliation à la Sécurité routière ni à un organisme agréé. Les questions sont des créations originales, sans promesse de reproduire la banque officielle.</p>
+</body>
+</html>

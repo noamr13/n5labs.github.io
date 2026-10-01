@@ -20,7 +20,7 @@
   <div class="meta">Effective date: 11 June 2026 · Developer: N5 Labs · Contact: <a href="mailto:support@n5labs.online">support@n5labs.online</a></div>
 
   <div class="callout">
-    <strong>Short version:</strong> MyDump (the "App") scans your camera roll <em>on your device</em> to surface photos for an Instagram-style carousel, and that scanning stays on your phone. The one exception is the optional <strong>AI photo-edit tools</strong>: when you choose to edit a photo with them, the single photo you pick is sent securely to our AI image provider (Google's Gemini API) to generate the edited image, which is then returned to you. We do not sell or share personal data, and your photos are never used for advertising or profiling. We use Apple's App Store and RevenueCat to manage optional Pro subscriptions.
+    <strong>Short version:</strong> MyDump (the "App") scans your camera roll <em>on your device</em> to surface photos for an Instagram-style carousel, and that scanning stays on your phone. The one exception is the optional <strong>AI photo-edit tools</strong>: when you choose to edit a photo with them, the single photo you pick is sent securely to our AI image provider (Google's Gemini API) to generate the edited image, which is then returned to you. We do not sell personal data. We disclose subscription information to Apple and RevenueCat and the selected AI-edit photo to Google as described below. Your photos are not used by us for advertising or profiling.
   </div>
 
   <h2>1. Who we are</h2>
@@ -40,7 +40,7 @@
   <h2>3. The minimal data we do use</h2>
   <ul>
     <li><strong>Photo library access</strong> via Apple's PhotoKit framework. You grant access via the standard iOS permission prompt. The access is used solely to read photo metadata (date, type, burst identifier, location) and pixel data needed to render the carousel preview — all on-device. Granted access can be revoked any time in iOS Settings → Privacy → Photos → MyDump.</li>
-    <li><strong>Subscription status</strong> via RevenueCat and the Apple App Store. RevenueCat receives an anonymous user ID (a random UUID assigned by the App, not by you) and your purchase status. Apple handles all payment information; we never see card or payment details.</li>
+    <li><strong>Subscription status</strong> via RevenueCat and the Apple App Store. RevenueCat receives an app user identifier and purchase status. An identifier without your name can still be personal information and should not be treated as fully anonymous. Apple processes payment information; we do not receive your full payment card details or Apple Account password.</li>
     <li><strong>On-device-only state</strong> (which tutorials you've seen, your daily free-dump count, your selected page) stays on the device using Apple's UserDefaults. It is never uploaded.</li>
     <li><strong>Carousels you export</strong> are saved to your own camera roll via Apple's PHPhotoLibrary. They stay on your device. We do not retain copies.</li>
     <li><strong>AI photo edits (optional, only when you start one).</strong> If you tap an AI edit tool (e.g. enhance, remove background, fix lighting, golden hour) and pick a photo, that one image plus a short text instruction is sent over an encrypted (TLS) connection — through our own secure proxy — to our AI image provider, Google's Gemini API, for the sole purpose of generating and returning the edited image. It is used only to fulfil your request: not for advertising, not to build a profile of you, and (per the provider's API terms) not to train their models. We do not store your photos on our servers; the result is returned to your device and saved only if you choose to save it.</li>
@@ -69,9 +69,15 @@
   <p>MyDump is not directed at children under 13. We do not knowingly collect personal information from anyone under 13. If you believe a child under 13 has used the App, contact <a href="mailto:support@n5labs.online">support@n5labs.online</a>.</p>
 
   <h2>9. Changes to this policy</h2>
-  <p>We may update this Privacy Policy from time to time. We will revise the effective date at the top and, where required, notify you in the App. Continued use of the App after a change constitutes acceptance.</p>
+  <p>We may update this Privacy Policy and will provide notice where required. A notice or continued use does not by itself establish consent to a new use or disclosure of personal information. Where consent is required, we must obtain it before that processing begins.</p>
 
   <h2>10. Contact</h2>
   <p>Developer: N5 Labs<br>Email: <a href="mailto:support@n5labs.online">support@n5labs.online</a></p>
+
+<section id="purchase-policy-update-2026-10-01" dir="ltr" style="margin:24px 0;padding:20px;border:1px solid #ccc;border-radius:8px;font-family:system-ui,sans-serif;line-height:1.6">
+<h2>Purchase and privacy update — published October 1, 2026</h2>
+<p>An app user or transaction identifier can be personal information even without your name. Where this app uses RevenueCat for store refund review, sharing purchase-delivery information, sample-content status, a refund preference and confirmation of consent requires valid consent when required. The store makes the final refund decision. This notice does not create that consent or authorize additional disclosures for earlier purchases.</p>
+<p>Details, rights and support: <a href="https://n5labs.online/terms">Terms</a> · <a href="https://n5labs.online/refund">Refund Policy</a> · <a href="https://n5labs.online/privacy">Privacy Policy</a> · <a href="mailto:support@n5labs.online">support@n5labs.online</a></p>
+</section>
 </body>
 </html>

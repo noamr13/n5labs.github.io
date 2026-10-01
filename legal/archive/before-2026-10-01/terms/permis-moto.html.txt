@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Conditions d&#x27;utilisation — Code Moto</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.55; }
+    h1 { font-size: 1.8rem; margin-bottom: 0.2rem; }
+    h2 { font-size: 1.2rem; margin-top: 1.8rem; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 1.4rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 0.3rem 0; }
+    a { color: #1C4AD9; }
+    .callout { background: #F2F5FF; border-left: 4px solid #1C4AD9; padding: 12px 16px; border-radius: 6px; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Conditions d&#x27;utilisation — Code Moto</h1>
+  <div class="meta">Date d&#x27;entrée en vigueur : 21 septembre 2026 · N5 Labs · <a href="mailto:hola@n5labs.online">hola@n5labs.online</a></div>
+
+  <div class="callout">
+    <strong>L&#x27;essentiel :</strong> Code Moto est un outil d&#x27;entraînement indépendant. Il n&#x27;est affilié à aucun organisme officiel et ne garantit pas la réussite à l&#x27;examen officiel.
+  </div>
+
+  <h2>1. Acceptation</h2>
+  <p>En téléchargeant et en utilisant Code Moto, vous acceptez les présentes conditions. Si vous n&#x27;êtes pas d&#x27;accord, n&#x27;utilisez pas l&#x27;application.</p>
+
+  <h2>2. Qu&#x27;est-ce que l&#x27;application</h2>
+  <p>Code Moto est une application de préparation à l&#x27;Examen Théorique Moto (ETM), l&#x27;épreuve théorique commune aux permis moto (catégories A1, A2 et A) en France. Elle propose des tests de type examen (40 questions, 35 bonnes réponses requises pour réussir), un suivi des erreurs, un panorama des thèmes du programme et une référence des panneaux de signalisation.</p>
+
+  <h2>3. Indépendance vis-à-vis des organismes officiels</h2>
+  <p>N5 Labs est un développeur privé et indépendant. Code Moto <strong>n&#x27;est affiliée, associée, autorisée ni avalisée</strong> par la Délégation à la sécurité routière, le ministère de l&#x27;Intérieur, ni aucun centre d&#x27;examen agréé. Les questions sont des créations originales de N5 Labs, rédigées à partir du programme officiel de l&#x27;ETM ; elles ne reproduisent pas une banque de questions officielle et les références à l&#x27;ETM sont purement descriptives du programme pratiqué.</p>
+
+  <h2>4. Aucune garantie de résultat</h2>
+  <p>L&#x27;application est un support d&#x27;entraînement, pas une prédiction de réussite. Bien que les questions suivent le programme officiel, nous <strong>ne garantissons pas</strong> qu&#x27;elles correspondent à celles de votre examen, ni que leur usage suffise à le réussir. L&#x27;examen officiel est organisé par un centre agréé selon ses propres critères.</p>
+
+  <h2>5. Exactitude du contenu</h2>
+  <p>Nous préparons le contenu avec soin, mais la réglementation routière évolue et des erreurs peuvent subsister. La source juridique en vigueur reste toujours le texte publié sur <a href="https://www.legifrance.gouv.fr">Légifrance</a> et les informations officielles de la sécurité routière, non cette application. Si vous repérez une erreur, écrivez-nous et nous la corrigerons.</p>
+  <p>Rien dans le contenu de l&#x27;application ne constitue un conseil juridique.</p>
+
+  <h2>6. Utilisation autorisée</h2>
+  <p>Vous pouvez utiliser l&#x27;application pour votre préparation personnelle. Vous ne pouvez pas :</p>
+  <ul>
+    <li>extraire, copier ou redistribuer son contenu, en tout ou partie ;</li>
+    <li>revendre l&#x27;accès à l&#x27;application ou à son contenu ;</li>
+    <li>procéder à une rétro-ingénierie de l&#x27;application, sauf dans la mesure où la loi le permet expressément.</li>
+  </ul>
+
+  <h2>7. Propriété intellectuelle</h2>
+  <p>L&#x27;application, sa conception, son code et sa banque de questions appartiennent à N5 Labs ou sont utilisés avec l&#x27;autorisation nécessaire. Les textes réglementaires cités sont des actes officiels publics ; en droit français, les textes de cette nature ne sont en principe pas soumis au droit d&#x27;auteur.</p>
+
+  <h2>8. Vos données</h2>
+  <p>L&#x27;application ne nécessite pas de compte. Apple traite le paiement des abonnements ; nous ne recevons pas les données de votre carte bancaire. RevenueCat gère l&#x27;état de votre abonnement au moyen d&#x27;un identifiant aléatoire de l&#x27;installation, sans votre prénom, vos réponses ni votre historique d&#x27;entraînement. Consultez la <a href="../privacy/permis-moto.html">politique de confidentialité</a> pour le détail complet.</p>
+
+  <h2>9. Prix et achats</h2>
+  <p>Vous pouvez utiliser l&#x27;application gratuitement : vous disposez d&#x27;une session d&#x27;entraînement gratuite par jour civil, et les thèmes, panneaux et statistiques restent toujours accessibles sans frais. <strong>Code Moto Pro</strong> est un abonnement à renouvellement automatique, hebdomadaire ou annuel, qui supprime cette limite quotidienne ; les deux durées donnent accès aux mêmes fonctionnalités et n&#x27;incluent pas de période d&#x27;essai gratuite. Le prix exact de chaque durée est affiché sur l&#x27;App Store avant l&#x27;achat et peut varier selon le pays ; en France, à la date de cette publication, l&#x27;abonnement hebdomadaire coûte 3,99 € et l&#x27;abonnement annuel 19,99 €.</p>
+  <ul>
+    <li>Le paiement est prélevé sur votre identifiant Apple à la confirmation de l&#x27;achat.</li>
+    <li>L&#x27;abonnement se renouvelle automatiquement, sauf annulation au moins 24 heures avant la fin de la période en cours.</li>
+    <li>Le prélèvement du renouvellement intervient dans les 24 heures précédant la fin de la période.</li>
+    <li>Vous pouvez gérer ou résilier l&#x27;abonnement depuis les réglages de votre compte Apple sur l&#x27;App Store.</li>
+    <li>Vous pouvez restaurer vos achats directement depuis l&#x27;application.</li>
+    <li>Les remboursements sont gérés par Apple selon ses propres conditions ; N5 Labs ne les traite pas directement.</li>
+  </ul>
+
+  <h2>10. Limitation de responsabilité</h2>
+  <p>L&#x27;application est fournie « telle quelle ». Dans la mesure permise par la loi applicable, N5 Labs ne pourra être tenue responsable des dommages résultant de l&#x27;utilisation de l&#x27;application, y compris le résultat d&#x27;un examen. Rien dans les présentes conditions n&#x27;exclut une responsabilité qui ne peut être exclue légalement, ni n&#x27;affecte les droits que la réglementation française et européenne de la consommation vous reconnaît.</p>
+
+  <h2>11. Modifications</h2>
+  <p>Nous pouvons mettre à jour ces conditions. La version en vigueur est toujours celle publiée sur cette page, avec sa date d&#x27;entrée en vigueur.</p>
+
+  <h2>12. Droit applicable</h2>
+  <p>Les présentes conditions sont régies par le droit français. Si vous êtes consommateur, vous conservez le droit de saisir les tribunaux de votre lieu de résidence.</p>
+
+  <h2>13. Contact</h2>
+  <p><a href="mailto:hola@n5labs.online">hola@n5labs.online</a></p>
+</body>
+</html>
