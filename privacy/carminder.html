@@ -17,7 +17,7 @@
 </head>
 <body>
   <h1>Privacy Policy — Car Play Widgets</h1>
-  <div class="meta">Effective date: 29 September 2026 (version 1.6) · Developer: N5 Labs · Contact: <a href="mailto:support@n5labs.online">support@n5labs.online</a></div>
+  <div class="meta">Effective date: 2 October 2026 (version 1.6) · Developer: N5 Labs · Contact: <a href="mailto:support@n5labs.online">support@n5labs.online</a></div>
 
   <div class="callout">
     <strong>Short version:</strong> Car Play Widgets stores widget setup on your device, uses Apple Shortcuts for optional ride sounds, and can look up timed lyrics for songs playing in Apple Music. It uses analytics and subscription services and measures its own ads without tracking you.
@@ -46,6 +46,12 @@
 
   <h2>3.2 Apple Music and timed lyrics</h2>
   <p>If you connect Apple Music and separately allow lyric lookups, the app reads the current song and playback position. It sends the song title, artist, album when available, and duration to <strong>LRCLIB</strong> over HTTPS to find timed lyrics. LRCLIB also receives your network IP address as part of the request. The app does not send your Apple account credentials or song audio to LRCLIB. You can turn off lyric lookups in the app; this stops new requests. Lyric and widget state may be stored locally to display the current line. See <a href="https://lrclib.net/">LRCLIB</a> for its service information.</p>
+
+  <h2>3.3 GIF Library (GIPHY)</h2>
+  <p>If you open the GIF Library, the app requests trending GIFs, and the search words you type, from <strong>GIPHY</strong> over HTTPS to show results. GIPHY also receives your network IP address as part of the request. When you pick a GIF, the app downloads its still image and stores it on your device as your widget picture. No photos, account details or other app data are sent to GIPHY. See <a href="https://giphy.com/privacy">GIPHY's privacy policy</a>.</p>
+
+  <h2>3.4 AI voice announcements (ElevenLabs)</h2>
+  <p>If you use AI Text-to-Speech to create a custom sound, the short text you type is sent over an encrypted connection to our secure relay (hosted on Cloudflare) and passed to our voice provider, <strong>ElevenLabs</strong>, solely to create that audio clip. The audio is returned to your device and stored locally. Each voice uses one AI credit. If you never use this feature, no text leaves your device for it. See <a href="https://elevenlabs.io/privacy-policy">ElevenLabs' privacy policy</a>.</p>
 
   <h2>4. Notifications and Shortcuts</h2>
   <p>Car Play Widgets can provide local notification sounds for Apple Shortcuts automations. Notification permission may be requested when you enable or run sound cues. Imported custom sounds stay on your device and are used only for local sound cues. You can change notification permissions in iOS Settings.</p>
