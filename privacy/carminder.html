@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Privacy Policy — Car Play Widgets</title>
+  <title>Privacy Policy — Car Widgets</title>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.55; }
     h1 { font-size: 1.8rem; margin-bottom: 0.2rem; }
@@ -16,18 +16,18 @@
   </style>
 </head>
 <body>
-  <h1>Privacy Policy — Car Play Widgets</h1>
-  <div class="meta">Effective date: 2 October 2026 (version 1.6) · Developer: N5 Labs · Contact: <a href="mailto:support@n5labs.online">support@n5labs.online</a></div>
+  <h1>Privacy Policy — Car Widgets</h1>
+  <div class="meta">Effective date: 18 October 2026 (version 1.7) · Developer: N5 Labs · Contact: <a href="mailto:support@n5labs.online">support@n5labs.online</a></div>
 
   <div class="callout">
-    <strong>Short version:</strong> Car Play Widgets stores widget setup on your device, uses Apple Shortcuts for optional ride sounds, and can look up timed lyrics for songs playing in Apple Music. It uses analytics and subscription services and measures its own ads without tracking you.
+    <strong>Short version:</strong> Car Widgets stores widget setup on your device, uses Apple Shortcuts for optional ride sounds, and can look up timed lyrics for songs playing in Apple Music. It uses analytics and subscription services and measures its own ads. It asks for Apple's tracking permission only after the paywall closes, and tracks you only if you allow it.
   </div>
 
   <h2>1. Who we are</h2>
-  <p>N5 Labs ("we", "us") is an independent iOS developer. Car Play Widgets (formerly CarMinder) is an iPhone app for car dashboard widgets, lyrics, motion-poster cards, and ride sound setup.</p>
+  <p>N5 Labs ("we", "us") is an independent iOS developer. Car Widgets is an iPhone app for car dashboard widgets, lyrics, motion-poster cards, and ride sound setup.</p>
 
   <h2>2. Data stored on your device</h2>
-  <p>Car Play Widgets may store these settings locally on your device:</p>
+  <p>Car Widgets may store these settings locally on your device:</p>
   <ul>
     <li>Car nickname, model name, city, dashboard color, and selected widget style.</li>
     <li>Selected car image and widget preview data used by the WidgetKit extension.</li>
@@ -39,7 +39,7 @@
   </ul>
 
   <h2>3. Widgets and photos</h2>
-  <p>When you choose a car image, Car Play Widgets processes it on device into a bounded widget image and stores it in the app's shared container so the WidgetKit extension can display it. The app does not request broad photo-library permission for this feature.</p>
+  <p>When you choose a car image, Car Widgets processes it on device into a bounded widget image and stores it in the app's shared container so the WidgetKit extension can display it. The app does not request broad photo-library permission for this feature.</p>
 
   <h2>3.1 AI Widgets (optional feature)</h2>
   <p>If you use the optional AI Widgets feature, the car photo and the person photo you explicitly select are sent over an encrypted connection to our secure relay (hosted on Cloudflare) and passed to our image-generation provider, fal.ai, solely to create your personalized widget image. The photos are used only for that single generation: they are not used to train AI models, are not used for advertising or marketing, and are not shared with anyone else. The generated widget image is returned to your device and stored locally. AI generations use credits, which can be included with a Pro subscription or purchased through Apple's in-app purchase system; we never see your payment details. If you never use AI Widgets, no photos leave your device.</p>
@@ -53,32 +53,36 @@
   <h2>3.4 AI voice announcements (ElevenLabs)</h2>
   <p>If you use AI Text-to-Speech to create a custom sound, the short text you type is sent over an encrypted connection to our secure relay (hosted on Cloudflare) and passed to our voice provider, <strong>ElevenLabs</strong>, solely to create that audio clip. The audio is returned to your device and stored locally. Each voice uses one AI credit. If you never use this feature, no text leaves your device for it. See <a href="https://elevenlabs.io/privacy-policy">ElevenLabs' privacy policy</a>.</p>
 
+  <h2>3.5 Content from our servers</h2>
+  <p>To keep the app small and its catalog fresh, Car Widgets downloads car pictures, widget designs, pictures and animated GIFs from our content server, hosted on Cloudflare. These requests carry no account details, photos or other app data; like any web request, they include your network IP address. Downloaded files are checked against a signature and stored in the app's cache on your device.</p>
+
   <h2>4. Notifications and Shortcuts</h2>
-  <p>Car Play Widgets can provide local notification sounds for Apple Shortcuts automations. Notification permission may be requested when you enable or run sound cues. Imported custom sounds stay on your device and are used only for local sound cues. You can change notification permissions in iOS Settings.</p>
-  <p>Apple Shortcuts runs personal automations such as CarPlay connect, CarPlay disconnect, and Arrive. Car Play Widgets provides App Shortcuts plus bundled or user-imported local sound cues; it does not control the CarPlay interface.</p>
+  <p>After the paywall at the end of onboarding closes, the app first shows a short message explaining that it sends occasional notifications about Pro offers, and only then asks for permission to send notifications. If you allow it and do not have Pro, the app schedules local reminders about Pro on your device: on days 1, 2, 3, 5, 7, 10, 14, 21 and 30 after onboarding, then about once a week for up to a year. They stop when you subscribe, and you can turn them off at any time in the app (Settings &gt; Pro reminders), which also removes the ones already scheduled, or in iOS Settings &gt; Notifications &gt; Car Widgets. These reminders are created on your device; no data is sent to schedule them.</p>
+  <p>Car Widgets can also provide local notification sounds for Apple Shortcuts automations. Imported custom sounds stay on your device and are used only for local sound cues. You can change notification permissions in iOS Settings.</p>
+  <p>Apple Shortcuts runs personal automations such as CarPlay connect, CarPlay disconnect, and Arrive. Car Widgets provides App Shortcuts plus bundled or user-imported local sound cues; it does not control the CarPlay interface.</p>
 
   <h2>5. Location</h2>
-  <p>Car Play Widgets does not request GPS location permission. Home arrival automations are configured and run by Apple's Shortcuts app. Our analytics or measurement providers may estimate an approximate region, such as your country or city, from your IP address; this is not precise GPS location.</p>
+  <p>Car Widgets does not request GPS location permission. Home arrival automations are configured and run by Apple's Shortcuts app. Our analytics or measurement providers may estimate an approximate region, such as your country or city, from your IP address; this is not precise GPS location.</p>
 
   <h2>6. Purchases</h2>
-  <p>Car Play Widgets may offer optional Pro features through auto-renewable subscriptions sold by Apple through your App Store account. We use <strong>RevenueCat</strong> to manage subscription entitlements and validate purchase status. RevenueCat processes purchase identifiers and subscription history needed to unlock Pro features. We never see your payment card or Apple ID password. RevenueCat also sends subscription lifecycle events and purchase values to Airbridge for ad measurement as described below.</p>
+  <p>Car Widgets may offer optional Pro features through auto-renewable subscriptions sold by Apple through your App Store account. We use <strong>RevenueCat</strong> to manage subscription entitlements and validate purchase status. RevenueCat processes purchase identifiers and subscription history needed to unlock Pro features. We never see your payment card or Apple ID password. RevenueCat also sends subscription lifecycle events and purchase values to Airbridge for ad measurement as described below.</p>
   <p>See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a> and <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
 
   <h2>7. Analytics and ad measurement</h2>
-  <p>Car Play Widgets sends product analytics events through <strong>Google Firebase Analytics</strong>, and through <strong>PostHog</strong> when an analytics key is configured. Events are designed to avoid personal content, precise location, license plates, phone numbers, names, messages, and audio URLs.</p>
+  <p>Car Widgets sends product analytics events through <strong>Google Firebase Analytics</strong>, and through <strong>PostHog</strong> when an analytics key is configured. Events are designed to avoid personal content, precise location, license plates, phone numbers, names, messages, and audio URLs.</p>
   <p>We use Firebase Analytics, Apple Ads attribution, and Apple's SKAdNetwork to measure installs and purchases that come from our own ads. RevenueCat may send purchase events to Firebase for this purpose. SKAdNetwork measurement is aggregated by Apple.</p>
-  <p>Car Play Widgets includes the restricted version of the SDK from <strong>Airbridge</strong>, our measurement partner, so we can see which of our own ads lead to installs and subscriptions. It collects Apple's app-specific identifier for vendors (IDFV) and an Airbridge device ID; basic device and app information, such as device model, OS and app version, language, and a country estimated from your IP address; app events such as installing, opening the app, and finishing onboarding; and, when an install came from an ad, Apple Ads attribution data and Google's on-device conversion measurement data. RevenueCat also sends subscription events, such as a new subscription or a renewal with its price and currency, from its servers to Airbridge together with the Airbridge device ID, so a subscription can be matched to the install it came from. Airbridge's restricted SDK does not collect the advertising identifier (IDFA), and we use this data only to measure our own ads.</p>
-  <p>Car Play Widgets does not ask for tracking permission, does not use the advertising identifier (IDFA), and does not track you across other companies' apps or websites. Versions 1.2 and 1.3 included Meta's SDK and asked for tracking permission; version 1.4 removed both.</p>
+  <p>Car Widgets includes the restricted version of the SDK from <strong>Airbridge</strong>, our measurement partner, so we can see which of our own ads lead to installs and subscriptions. It collects Apple's app-specific identifier for vendors (IDFV) and an Airbridge device ID; basic device and app information, such as device model, OS and app version, language, and a country estimated from your IP address; app events such as installing, opening the app, and finishing onboarding; and, when an install came from an ad, Apple Ads attribution data and Google's on-device conversion measurement data. RevenueCat also sends subscription events, such as a new subscription or a renewal with its price and currency, from its servers to Airbridge together with the Airbridge device ID, so a subscription can be matched to the install it came from. Airbridge's restricted SDK does not collect the advertising identifier (IDFA), and we use this data only to measure our own ads.</p>
+  <p><strong>Tracking permission.</strong> From version 1.7, once the paywall at the end of onboarding closes (after the paywall, never before it or on it), the app asks for Apple's App Tracking Transparency permission, right after the notification request. If you allow it, Google Firebase Analytics can read your device's advertising identifier (IDFA) and share it with Google, so Google Ads can measure which of our ads lead to installs and purchases, and RevenueCat may collect device identifiers for the same measurement. If you decline, or later turn tracking off in iOS Settings &gt; Privacy &amp; Security &gt; Tracking, the IDFA is not read and is not shared. Airbridge's restricted SDK never uses the IDFA. Versions 1.2 and 1.3 included Meta's SDK and asked for tracking permission; versions 1.4 to 1.6 did not ask.</p>
   <p>See <a href="https://policies.google.com/privacy">Google's privacy policy</a>, <a href="https://posthog.com/privacy">PostHog's privacy policy</a>, and <a href="https://www.airbridge.io/en/privacy-policy">Airbridge's privacy policy</a>.</p>
 
   <h2>8. Children</h2>
-  <p>Car Play Widgets is a general lifestyle utility. It is not directed at children under 13 and does not knowingly collect personal information from children.</p>
+  <p>Car Widgets is a general lifestyle utility. It is not directed at children under 13 and does not knowingly collect personal information from children.</p>
 
   <h2>9. No sale of personal information</h2>
   <p>N5 Labs does not sell personal information.</p>
 
   <h2>10. Your choices</h2>
-  <p>You can remove locally stored Car Play Widgets data by deleting the app from your device. You can turn off lyric lookups in the app. For questions or requests, email <a href="mailto:support@n5labs.online">support@n5labs.online</a>.</p>
+  <p>You can remove locally stored Car Widgets data by deleting the app from your device. You can turn off lyric lookups in the app, turn off Pro reminders in the app (Settings &gt; Pro reminders) or all notifications in iOS Settings &gt; Notifications, and turn off tracking in iOS Settings &gt; Privacy &amp; Security &gt; Tracking. For questions or requests, email <a href="mailto:support@n5labs.online">support@n5labs.online</a>.</p>
 
   <h2>11. Changes</h2>
   <p>We may update this policy as the app evolves. Material changes will be reflected here with a new effective date.</p>
