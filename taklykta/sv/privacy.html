@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Integritetspolicy — Taklykta</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #2A1608; background: #FFFDF8; line-height: 1.55; }
+    h1 { font-size: 1.8rem; margin-bottom: 0.2rem; }
+    h2 { font-size: 1.2rem; margin-top: 1.8rem; }
+    .meta { color: #6B5443; font-size: 0.9rem; margin-bottom: 1.4rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 0.3rem 0; }
+    a { color: #8A5A00; }
+    .callout { background: #FFF5E3; border-left: 4px solid #FFB21E; padding: 12px 16px; border-radius: 6px; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Integritetspolicy — Taklykta</h1>
+  <div class="meta">Gäller från: 7 november 2026 · Utvecklare: N5 Labs · Kontakt: <a href="mailto:support@n5labs.online">support@n5labs.online</a> · <a href="../privacy.html">English</a></div>
+
+  <div class="callout">
+    <strong>Kort version:</strong> Taklykta hjälper dig att förbereda dig för teoriproven till taxiförarlegitimation. Dina framsteg, svar, poäng och provdatum stannar på din enhet. Det finns inget konto och ingen inloggning. Vi säljer eller delar inga personuppgifter, och appen innehåller ingen reklam.
+  </div>
+
+  <h2>1. Vilka vi är</h2>
+  <p>N5 Labs ("vi", "oss") är en oberoende iOS-utvecklare. Taklykta ("appen") är en iPhone-app med övningsfrågor, tidsatta provsimuleringar, lagrum, kartövningar, repetition av fel och en planerare för sexmånadersfönstret för de två teoriproven för taxiförarlegitimation.</p>
+
+  <h2>2. Data som bara finns på din enhet</h2>
+  <ul>
+    <li>Dina svar, resultat, övnings- och provhistorik, felrepetition, poäng och rätt-i-rad-räknare.</li>
+    <li>De provdatum du anger (frivilligt).</li>
+  </ul>
+  <p>Datan sparas lokalt med Apples standardlagring. Den laddas aldrig upp till våra servrar och vi kan inte se den. Dina framsteg stannar på telefonen. Du kan radera dem när som helst i appen under Inställningar (kugghjulet på Hem) med "Nollställ min träning", eller genom att avinstallera appen.</p>
+
+  <h2>2b. Daglig påminnelse</h2>
+  <p>Om du slår på den dagliga påminnelsen schemalägger appen en lokal notis på din enhet vid den tid du väljer. Ingenting om påminnelsen skickas till oss. Du kan stänga av den i appen (Inställningar, kugghjulet på Hem) eller i iOS Inställningar.</p>
+
+  <h2>3. Data som appen <em>inte</em> samlar in</h2>
+  <ul>
+    <li>Inget namn, ingen e-post, inget telefonnummer, ingen adress och inget personnummer eller annat id. Inget konto eller registrering.</li>
+    <li>Ingen plats, inga kontakter, foton, kamera, mikrofon eller hälsodata.</li>
+    <li>Inget reklam-id (IDFA). Vi spårar dig inte i andra företags appar eller webbplatser, så appen ber inte om tillstånd för App Tracking Transparency.</li>
+    <li>Inga reklam- eller analys-SDK:er från tredje part.</li>
+  </ul>
+
+  <h2>4. Den minimala data vi använder</h2>
+  <ul>
+    <li><strong>Anonymt prenumerations-id.</strong> RevenueCat ger appen ett slumpmässigt id som inte är hämtat från någon personlig information. Det används bara för att kontrollera om du har Taklykta Pro.</li>
+    <li><strong>Köphistorik.</strong> När du köper eller återställer Taklykta Pro hanterar Apple och RevenueCat transaktionen. Apple sköter alla betalningsuppgifter; vi ser aldrig kort- eller betalinformation.</li>
+    <li><strong>Användningskontext till RevenueCat.</strong> Appen skickar följande attribut till RevenueCat, och inga andra. De hjälper oss att förstå vilken version och vilken typ av användare som köper Pro. De innehåller aldrig dina svar, resultat, provdatum eller ditt namn.
+      <ul>
+        <li><code>tk_app</code>: appens namn ("taklykta").</li>
+        <li><code>tk_version</code>: appens version, till exempel 1.0.</li>
+        <li><code>tk_build</code>: appens byggnummer.</li>
+        <li><code>tk_language</code>: enhetens önskade språk.</li>
+        <li><code>tk_market</code>: marknaden appen är gjord för, alltid "SE".</li>
+        <li><code>tk_onboarded</code>: yes eller no, om du har gjort klart den första uppstarten.</li>
+        <li><code>tk_test_booked</code>: yes eller no, om du har angett ett provdatum (själva datumet skickas aldrig).</li>
+        <li><code>tk_goal</code>: det mål du valde under uppstarten.</li>
+        <li><code>tk_daily_minutes</code>: de minuter per dag du valde att plugga.</li>
+        <li><code>tk_paywall_source</code>: varifrån du öppnade Pro-sidan: onboarding, settings, home, drill_limit eller mock_limit.</li>
+      </ul>
+    </li>
+    <li><strong>Attribuering från Apple Search Ads.</strong> Om du installerade appen från en annons i Apple Search Ads ger Apples ramverk AdServices en anonym attribueringstoken som skickas till RevenueCat, så att vi kan se vilken annonskampanj som ledde till en installation eller ett köp. Den identifierar inte dig och används inte för att spåra dig mellan appar.</li>
+  </ul>
+
+  <h2>5. Prenumerationer</h2>
+  <p>Taklykta Pro är en automatiskt förnyad prenumeration som säljs via Apple App Store och hanteras med RevenueCat. Du kan hantera eller avsluta den när som helst i inställningarna för ditt App Store-konto.</p>
+
+  <h2>6. Tredjepartstjänster</h2>
+  <ul>
+    <li><strong>RevenueCat</strong>: prenumerationsstatus och köphistorik, med det anonyma id:t. <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
+    <li><strong>Apple</strong>: distribution, betalningar och attribuering från Search Ads. <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></li>
+  </ul>
+
+  <h2>7. Lagring</h2>
+  <p>Studiedata finns kvar på din enhet tills du raderar den i appen ("Nollställ min träning" under Inställningar) eller avinstallerar appen. RevenueCat sparar anonyma köpuppgifter så länge det behövs för att tillhandahålla och verifiera din prenumeration och för att uppfylla rättsliga krav.</p>
+
+  <h2>8. Barn</h2>
+  <p>Taklykta är till för dig som förbereder dig för ett körkorts- eller legitimationsprov och riktar sig inte till barn under 13 år. Vi samlar inte medvetet in personuppgifter från barn.</p>
+
+  <h2>9. Dina rättigheter</h2>
+  <p>Om du bor i EU (inklusive Sverige) eller Storbritannien har du enligt GDPR rätt att få tillgång till, rätta, radera eller invända mot behandling av personuppgifter. Eftersom appen inte har något konto och bara sparar din studiedata på enheten är det mesta redan under din egen kontroll. För allt annat, mejla <a href="mailto:support@n5labs.online">support@n5labs.online</a>. Du kan också klaga hos din dataskyddsmyndighet (i Sverige Integritetsskyddsmyndigheten, IMY).</p>
+
+  <h2>10. Ändringar</h2>
+  <p>Vi kan uppdatera policyn när appen förändras. Datumet högst upp visar senaste versionen.</p>
+
+  <h2>11. Kontakt</h2>
+  <p>Frågor om policyn? Mejla <a href="mailto:support@n5labs.online">support@n5labs.online</a>.</p>
+</body>
+</html>
